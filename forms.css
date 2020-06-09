@@ -1,0 +1,335 @@
+body {
+    background-color: green 
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-family: Arial;
+    opacity: 0.8;
+}
+
+form {
+    text-align: center;
+    background: #cacaca;
+    font-family: Arial;
+    text-transform: none;
+    color: black;
+    width: 800px;
+    margin: 0 auto;
+    opacity: 0.9;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+fieldset {
+    border-radius: 30px;
+    border-color: white;
+    border-width: 3px;
+}
+
+input {
+    border-radius: 10px;
+    height: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+
+input:required:valid {
+    border: solid #558f78 2px;
+}
+
+input:focus:valid {
+    border: solid #889d96 2px;
+    background-color: #ceeadf;
+}
+
+input:focus:invalid {
+    background-color: #eacece;
+    border: red solid 2px;
+}
+
+input:hover {
+    background-color: #e5ebf7;
+    opacity: 0.8;
+    border-color: #a7bbe4;
+}
+
+.legend {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+label {
+    cursor: pointer;
+}
+
+#code {
+    background: url(image/code.png) no-repeat 5px 50% white;
+}
+
+#code:focus:invalid {
+    background-color: #eacece;
+    border: red solid 2px;
+}
+
+#code:focus:valid {
+    border: solid #889d96 2px;
+    background-color: #ceeadf;
+}
+
+#code:hover {
+    background-color: #e5ebf7;
+    opacity: 0.8;
+    border-color: #a7bbe4;
+}
+
+#code:required:valid {
+    border: solid #558f78 2px;
+}
+
+
+#email {
+    background: url(image/mail.png) no-repeat 5px 50% white;
+}
+
+#email:focus:invalid {
+    background-color: #eacece;
+    border: red solid 2px;
+}
+
+#email:focus:valid {
+    border: solid #889d96 2px;
+    background-color: #ceeadf;
+}
+
+#email:hover {
+    background-color: #e5ebf7;
+    opacity: 0.8;
+    border-color: #a7bbe4;
+}
+
+#email:required:valid {
+    border: solid #558f78 2px;
+}
+
+#password {
+    background: url(image/pass.png) no-repeat 5px 50% white;
+}
+
+#password:focus:invalid {
+    background-color: #eacece;
+    border: red solid 2px;
+}
+
+#password:focus:valid {
+    border: solid #889d96 2px;
+    background-color: #ceeadf;
+}
+
+#password:hover {
+    background-color: #e5ebf7;
+    opacity: 0.8;
+    border-color: #a7bbe4;
+}
+
+#password:required:valid {
+    border: solid #558f78 2px;
+}
+
+#tel_code {
+    background: url(image/tel.png) no-repeat 5px 50% white;
+}
+
+#tel_code:focus:invalid {
+    background-color: #eacece;
+    border: red solid 2px;
+}
+
+#tel_code:focus:valid {
+    border: solid #889d96 2px;
+    background-color: #ceeadf;
+}
+
+#tel_code:hover {
+    background-color: #e5ebf7;
+    opacity: 0.8;
+    border-color: #a7bbe4;
+}
+
+#conferention:hover {
+    background-color: #e5ebf7;
+    opacity: 0.8;
+}
+
+#letter {
+    background: url(image/file.png) no-repeat 290px 50% white;
+    cursor: pointer;
+    border: solid #9fa2a6 2px;
+    padding: 10px;
+    color: #606264;
+    width: 300px;
+    height: 20px;
+}
+
+#letter:focus:invalid {
+    background-color: #eacece;
+    border: red solid 2px;
+}
+
+#letter:focus:valid {
+    border: solid #889d96 2px;
+    background-color: #ceeadf;
+}
+
+#letter:hover {
+    background-color: #e5ebf7;
+    opacity: 0.8;
+    border-color: #a7bbe4;
+}
+
+#letter:required:valid {
+    border: solid #558f78 2px;
+}
+
+.net {
+    cursor: pointer;
+}
+
+.rules {
+    cursor: pointer;
+}
+
+.sex {
+    cursor: pointer;
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+#submit {
+    background: #e5ebf7;
+    height: 40px;
+    width: 120px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: Arial;
+    color: #606264;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+#submit:hover {
+    background: #a7bbe4;
+}
+
+textarea {
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+textarea:hover {
+    background-color: #b2b3b3;
+}
+
+#rules {
+    text-align: left;
+    border-color: transparent;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+#city {
+    height: 30px;
+    width: 170px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+#city:focus:valid {
+    border: solid #889d96 2px;
+}
+
+#city:hover {
+    background-color: #e5ebf7;
+    opacity: 0.8;
+    border-color: #a7bbe4;
+}
+
+#city:required:valid {
+    border: solid #558f78 2px;
+}
+
+#color {
+    height: 30px;
+    width: 30px;
+    padding: 5px 5px;
+    background: white;
+    border-radius: 200px;
+}
+
+#color:hover {
+    background: #e5ebf7;
+}
+
+#diploma {
+    height: 20px;
+    width: 160px;
+    padding: 5px 5px;
+    background: white;
+    text-align: center;
+}
+
+#diploma {
+    background: url(image/diploma.png) no-repeat 5px 50% white;
+}
+
+#diploma:focus:invalid {
+    background-color: #eacece;
+    border: red solid 2px;
+}
+
+#diploma:focus:valid {
+    border: solid #889d96 2px;
+    background-color: #ceeadf;
+}
+
+#diploma:hover {
+    background-color: #e5ebf7;
+    opacity: 0.8;
+    border-color: #a7bbe4;
+}
+
+#diploma:required:valid {
+    border: solid #558f78 2px;
+}
+
+#datetime {
+    width: 250px;
+    background: url(image/datetime.png) no-repeat 5px 50% white;
+}
+
+#datetime:focus:invalid {
+    background-color: #eacece;
+    border: red solid 2px;
+}
+
+#datetime:focus:valid {
+    border: solid #889d96 2px;
+    background-color: #ceeadf;
+}
+
+#datetime:hover {
+    background-color: #e5ebf7;
+    opacity: 0.8;
+    border-color: #a7bbe4;
+}
+
+#datetime:required:valid {
+    border: solid #558f78 2px;
+}

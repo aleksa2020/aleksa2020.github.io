@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+
+<body>
+    <h1>Форма регистрации</h1>
+    <form method="get" target="_blank">
+
+        <fieldset>
+            <legend class="legend">Аутентификация</legend>
+
+            <label for="surname">* Фамилия</label><br>
+            <input type="text" id="surname" name="surname" pattern="^[А-Яа-яЁёa-zA-Z]+$" required placeholder="Фамилия" autofocus size="50" title="Введите Вашу фамилию" maxlength="18" value=""><br><br>
+
+            <label for="name">* Имя</label><br>
+            <input type="text" id="name" name="name" pattern="^[А-Яа-яЁёa-zA-Z]+$" required placeholder="Имя" size="50" title="Введите Ваше имя" maxlength="18"><br><br>
+
+            <label for="patronymic">* Отчество</label><br>
+            <input type="text" id="patronymic" name="patronymic" pattern="^[А-Яа-яЁёa-zA-Z]+$" required placeholder="Отчество" size="50" title="Введите Ваше отчество" maxlength="18"><br><br>
+
+            <label for="code">* Код:</label><br>
+            <input pattern="[0-9][A-Z]{3}" name="code" id="code" required maxlength="4" title="Введите код(одна цифра от 1 до 9 и три заглавные буквы латинского алфавита от A до Z)" placeholder="Введите код">
+        </fieldset>
+
+        <fieldset>
+            <legend class="legend">Регистрация в личном кабинете</legend>
+
+            <label for="email">* E-mail:</label><br>
+            <input type="email" id="email" name="email" required placeholder="Адрес электронной почты" size="50" title="Введите Ваш адрес электронной почты"><br><br>
+
+            <label for="password">* Пароль:</label><br>
+            <input type="password" id="password" name="password" required placeholder="Пароль" size="50" minlength="4" maxlength="20" title="Введите пароль (от 4 до 20 знаков)"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend class="legend">Личные данные</legend>
+
+            <label for="sex">* Пол:</label><br>
+            <label><input type="radio" name="sex" class="sex" required title="Мужской"> <img src="image/man.png" title="Мужской" alt="М"> </label>
+            <label><input type="radio" name="sex" class="sex" required title="Женский"> <img src="image/woman.png" title="Женский" alt="Ж"></label><br>
+
+            <label for="tel">* Номер мобильного телефона:</label><br>
+            <input type="tel" id="tel_code" name="tel_code" value="+375 " disabled size="10">
+            <input type="tel" id="tel" name="tel" required pattern="[0-9]{9}" title="Введите номер мобильного телефона(последние 9 цифр)" size="25" placeholder="(XX) XXX XX XX" maxlength="9"><br><br>
+            <label for="url">* Ссылка на профиль в соцсетях:</label><br>
+            <label><input type="radio" name="net" class="net" title="ВКонтакте"><img src="image/vk.png" alt="Вконтакте" title="ВКонтакте"></label>
+            <label> <input type="radio" name="net" class="net" title="Instagram"><img src="image/inst.png" alt="Instagram" title="Instagram"></label>
+            <label> <input type="radio" name="net" class="net" title="Facebook"><img src="image/face.png" alt="Facebook" title="Facebook"></label>
+            <label><input type="radio" name="net" class="net" title="Twitter"><img src="image/twi.png" alt="Twitter" title="Twitter"></label><br>
+
+            <input type="url" id="url" name="url" value="https://" required placeholder="Введите ссылку в формате https://" size="50" title='Введите ссылку на Ваш профиль в социальных сетях в формате "https://"'><br><br>
+
+            <label for="city">Область проживания:</label><br>
+            <select name="city" id="city" required title="* Выберите область Вашего проживания">
+             <option value="">Брестская обл.</option>
+             <option value="">Витебская обл.</option>
+             <option value="">Гомельская обл.</option>
+             <option value="">Гродненкская обл.</option>
+             <option value="">Минская обл.</option>
+             <option value="" selected>г.Минск</option>
+             <option value="">Могилевская обл.</option>
+            </select><br><br>
+
+        <fieldset>
+            <legend class="legend">Дополнительно</legend>
+
+            <label for="datetime">* Дата и время регистрации:</label><br>
+            <input type="datetime-local" required id="datetime" name="datetime" title="Введите дату и время регистрации"><br><br>
+
+            <label for="conferention">Интересующий вопрос:</label><br>
+            <textarea name="conferention" id="conferention" cols="70" rows="10" title="Задайте вопрос, который вас интересует"></textarea><br><br>
+
+            <label for="letter">* Прилагаемые документы:</label><br>
+            <input type="file" id="letter" name="letter" required title="Прикрепите документы, по интересующему вопросу, если такие имеются"><br><br>
+        </fieldset>
+        <fieldset id="rules">
+            <label><input type="checkbox" name="rules" class="rules" required> * Я подтверждаю свое согласие с условиями пользовательского соглашения;</label><br>
+            <label><input type="checkbox" name="rules" class="rules" checked> Отправить автоматическое уведомление на почту о моей успешной регистрации;</label><br><br>
+        </fieldset>
+        <label><input type="submit" id="submit" value="Отправить" title="Отправить"><br></label>
+    </form>
+</body>
+
+</html>
